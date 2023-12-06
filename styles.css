@@ -1,0 +1,228 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: seashell;
+    opacity: 0.9;
+}
+
+/* BASE STYLES */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 69px;
+}
+
+/* HEADER */
+.header {
+    opacity: 1;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+}
+
+.header_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 69px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+.logo_image {
+    height: 50px;
+    display: block;
+}
+
+.menu_list {
+    list-style: none;
+    display: flex;
+    column-gap: 20px;
+}
+
+.menu_link {
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+.menu_link:hover,
+.menu_link:focus {
+    color: rgb(135, 135, 135);
+    text-decoration: none;
+}
+
+
+/* OUR MISSION */
+.our_mission {
+    position: relative;
+    text-align: center;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.background_image {
+    max-height: 700px;
+    width: 1200px;
+    overflow: hidden;
+}
+
+.background_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.mission_banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100px;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+
+/* TEA OF THE MONTH */
+.tea_of_the_month {
+    position: relative;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.tea_header {
+    margin: 20px;
+    
+}
+
+.tea_header h2, .tea_header h4 {
+    padding: 10px;
+}
+
+.tea_selection_group {
+    display: flex;
+    justify-content: center;
+    align-items: space-between;
+    flex-wrap: wrap;
+    row-gap: 10px;
+}
+
+.tea_selection_item {
+    padding: 0 30px;
+    transition: all 0.4s;
+}
+
+.tea_selection_image {
+    height: 200px;
+    width: 300px;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+.tea_selection_image:hover,
+.tea_selection_image:focus {
+    transform: scale(1.1);
+}
+
+.tea_selection_header {
+    margin: 10px;
+}
+
+
+/* LOCATIONS */
+.locations {
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.locations_background {
+    max-height: 500px;
+    width: 1200px;
+    overflow: hidden;
+}
+
+.locations_background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.locations_info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 15px;
+    background: none;
+    opacity: 1;
+}
+
+.locations_header {
+    background: none;
+    margin: 15px;
+}
+
+.addresses {
+    display: flex;
+    justify-content: center;
+    align-items: space-between;
+    flex-wrap: wrap;
+    row-gap: 100px;
+    column-gap: 40px;
+    background: none;
+    opacity: 1;
+}
+
+.downtown,
+.east_bayside,
+.oakdale {
+    line-height: 50px;
+    color: black;
+    padding: 50px;
+    width: 300px;
+    opacity: 1;
+}
+
+
+/* FOOTER */
+.footer {
+    height: 200px;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer_header {
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.email,
+.number {
+    padding: 15px;
+}
+
+.copyright {
+    text-align: start;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
